@@ -1,5 +1,24 @@
 # Safe Harbor De-Identification
 
+## Getting started
+Running this project requires Node.js (and npm).
+
+## Processing the data (optional)
+A pre-processing script is included to output an object in JSON format to STDOUT where the key is a three-digit zipcode prefix and the value is either a 1 or 0 to indicate whether or not the combined population of the zipcodes included in the population_by_zcta_2010.csv exceed 20,000 (or `ZIPCODE_PREFIX_POP_CUTOFF`).
+```shell
+node scripts/zipcode.js > high_pop_zipcodes.json
+```
+
+## Running the API
+```shell
+node index.js
+```
+An HTTP API will listen on port 3000 (or the `PORT` environment variable) and respond to JSON encoded `POST` and `GET` requests at any path in accordance with the challenge specifications.
+
+### Running tests
+```shell
+npm test
+```
 ## Introduction
 
 In the United States, the privacy of patient data is governed by the Health

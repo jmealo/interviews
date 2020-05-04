@@ -1,0 +1,28 @@
+{
+  "name": "api-challenge",
+  "version": "1.0.0",
+  "description": "This is a set of coding challenges designed to vet the technical ability of software engineers applying to Elsevier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmealo/interviews.git"
+  },
+  "author": "Jeff Mealo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmealo/interviews/issues"
+  },
+  "homepage": "https://github.com/jmealo/interviews#readme",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "libphonenumber-js": "^1.7.51",
+    "moment": "^2.25.3"
+  },
+  "devDependencies": {
+    "jest": "^25.5.4"
+  }
+}
