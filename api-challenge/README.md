@@ -4,7 +4,7 @@
 Running this project requires Node.js (and npm).
 
 ## Processing the data (optional)
-A pre-processing script is included to output an object in JSON format to STDOUT where the key is a three-digit zipcode prefix. The value is always 1. A prefix's presence in this lookup table indicates that combined population of the zipcodes included in the population_by_zcta_2010.csv exceed 20,000 (or `ZIPCODE_PREFIX_POP_CUTOFF`).
+A pre-processing script is included to output an object in JSON format to STDOUT where the key is a three-digit zipcode prefix. The value is always 1. A prefix's presence in this lookup table indicates that the combined population of the zipcodes included in the population_by_zcta_2010.csv exceed 20,000 (or `ZIPCODE_PREFIX_POP_CUTOFF`).
 ```shell
 node scripts/zipcode.js > high_pop_zipcodes.json
 ```
